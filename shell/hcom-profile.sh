@@ -314,7 +314,7 @@ hcom_build(){
         if [ "${app}" = "SHA" ]; then
             export JAVA_HOME=$JAVA7_HOME
             app_path=$path_to_sha
-            web_path=$path/shoppingapp-web
+            web_path=$app_path/shoppingapp-web
         fi
         if [ "${app}" = "CAP" ]; then
             app_path=$path_to_cap
@@ -322,7 +322,7 @@ hcom_build(){
         if [ "${app}" = "PDA" ]; then
             export JAVA_HOME=$JAVA7_HOME
             app_path=$path_to_pda
-            web_path=$path/propertydetailsapp-web
+            web_path=$app_path/propertydetailsapp-web
         fi
         if [ "$app" = "BA" ]; then
             export JAVA_HOME=$JAVA7_HOME
